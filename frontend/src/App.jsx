@@ -1,4 +1,11 @@
+import NavBar from "./components/layout/NavBar";
+import Footer from "./components/layout/Footer";
 function App() {
-  return <h1 className="text-2xl text-red-500">Interlink under construction</h1>;
+  return (
+    <>
+      <NavBar />
+      <Footer />
+    </>
+  );
 }
 export default App;
