@@ -20,7 +20,7 @@ function Hero() {
                 </div>
             </div>
 
-            <div className="h-screen mx-auto px-16 flex flex-col justify-center overflow-x-hidden">
+            <div className="h-screen  mx-auto px-16 flex flex-col justify-center overflow-x-hidden text-[#3B3C4A]">
                 <div className="flex flex-row justify-around w-screen">
                     <div className="head">
                         <h1 className="font-semilight text-xl pb-2">TESTIMONIALS</h1>
@@ -34,7 +34,7 @@ function Hero() {
                         <button className="font-extralight text-white text-center bg-[#141624F5] rounded-xl w-full h-11">See our TrustPilot</button>
                     </div>
                     <div className="person">
-                        <div className="border-2 w-96 h-60 border-grey-700 rounded-md p-3 pt-8 shadow-md relative">
+                        <div className="border-2 w-96 h-60 border-grey-700 rounded-lg p-3 pt-8 shadow-md relative">
                             <div className="bg-black m-auto h-12 w-12 rounded-full absolute top-0 left-3 trans" style={{ transform: 'translateY(-25px)' }}></div>
                             In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a whatever thing that u guys were going to write anyways 😏😉
                             <div className="absolute bottom-3 font-semibold">Benjamin Frank</div>
@@ -43,14 +43,14 @@ function Hero() {
                 </div>
             </div>
 
-            <div className=" mx-auto px-16 overflow-x-hidden">
-                <h1 className="text-2xl font-semibold">Statistics</h1>
-                <div className="mt-3">In publishing and graphic design, <span className="text-black font-semibold">Lorem</span> ipsum is a placeholder</div>
+            <div className=" mx-auto px-16 overflow-x-hidden  text-[#3B3C4A]">
+                <h1 className="text-4xl font-semibold">Statistics</h1>
+                <div className="mt-3">In publishing and graphic design, <span className=" text-[#3B3C4A] font-semibold">Lorem</span> ipsum is a placeholder</div>
                 <div className="overflow-x-hidden flex flex-row justify-between w-11/12 mt-6">
 
                     <div className="hover:text-white bg-[#edededda] hover:bg-gradient-to-r hover:from-[#112b4f] hover:via-slate-700 hover:to-[#112b4f] w-4/12 h-[275px] rounded-[30px] flex flex-col p-12 gap-8">
                         <div className="bg-white w-10 h-10 flex flex-col px-2.5 pt-3 rounded-full">
-                            <svg className="text-black" stroke="currentColor" fill="currentColor" strokeWidth={1} viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <svg className=" text-[#3B3C4A]" stroke="currentColor" fill="currentColor" strokeWidth={1} viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                                 <path fill="none" d="M0 0h24v24H0z"></path>
                                 <path d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z"></path>
                             </svg>
@@ -60,7 +60,7 @@ function Hero() {
 
                     <div className="hover:text-white bg-[#edededda] hover:bg-gradient-to-r hover:from-[#112b4f] hover:via-slate-700 hover:to-[#112b4f] w-4/12 h-[275px] rounded-[30px] flex flex-col p-12 gap-8">
                         <div className="bg-white w-10 h-10 flex flex-col px-2.5 pt-3 rounded-full">
-                            <svg className="text-black" stroke="currentColor" fill="currentColor" strokeWidth={1} viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <svg className=" text-[#3B3C4A]" stroke="currentColor" fill="currentColor" strokeWidth={1} viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                                 <path fill="none" d="M0 0h24v24H0z"></path>
                                 <path d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z"></path>
                             </svg>
@@ -70,7 +70,7 @@ function Hero() {
 
                     <div className="hover:text-white bg-[#edededda] hover:bg-gradient-to-r hover:from-[#112b4f] hover:via-slate-700 hover:to-[#112b4f] w-2/12 h-[275px] rounded-[30px] flex flex-col p-12 gap-8">
                         <div className="bg-white w-10 h-10 flex flex-col px-2.5 pt-3 rounded-full">
-                            <svg className="text-black" stroke="currentColor" fill="currentColor" strokeWidth={1} viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <svg className=" text-[#3B3C4A]" stroke="currentColor" fill="currentColor" strokeWidth={1} viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                                 <path fill="none" d="M0 0h24v24H0z"></path>
                                 <path d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z"></path>
                             </svg>
@@ -82,9 +82,9 @@ function Hero() {
                 <div className="overflow-x-hidden mx-auto flex flex-row justify-between w-11/12 mt-3">
                     <div className="bg-[#edededda] hover:bg-gradient-to-r hover:from-[#112b4f] hover:via-slate-700 hover:to-[#112b4f] hover:text-white w-2/12 h-[275px] rounded-[30px] flex flex-col p-12 gap-8">
                         <div className="bg-white w-10 h-10 flex flex-col px-2.5 pt-3 rounded-full">
-                            <svg className="text-black" stroke="currentColor" fill="currentColor" strokeWidth={1} viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <svg className=" text-[#3B3C4A]" stroke="currentColor" fill="currentColor" strokeWidth={1} viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                                 <path fill="none" d="M0 0h24v24H0z"></path>
-                                <path className="hover:text-black" d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z"></path>
+                                <path className="hover:t text-[#3B3C4A]" d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z"></path>
                             </svg>
                         </div>
                         <h2>where does this go</h2>
@@ -92,7 +92,7 @@ function Hero() {
 
                     <div className="hover:text-white bg-[#edededda] hover:bg-gradient-to-r hover:from-[#112b4f] hover:via-slate-700 hover:to-[#112b4f] w-4/12 h-[275px] rounded-[30px] flex flex-col p-12 gap-8">
                         <div className="bg-white w-10 h-10 flex flex-col px-2.5 pt-3 rounded-full">
-                            <svg className="text-black" stroke="currentColor" fill="currentColor" strokeWidth={1} viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <svg className=" text-[#3B3C4A]" stroke="currentColor" fill="currentColor" strokeWidth={1} viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                                 <path fill="none" d="M0 0h24v24H0z"></path>
                                 <path d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z"></path>
                             </svg>
@@ -102,7 +102,7 @@ function Hero() {
 
                     <div className="hover:text-white bg-[#edededda] hover:bg-gradient-to-r hover:from-[#112b4f] hover:via-slate-700 hover:to-[#112b4f] w-4/12 h-[275px] rounded-[30px] flex flex-col p-12 gap-8">
                         <div className="bg-white w-10 h-10 flex flex-col px-2.5 pt-3 rounded-full">
-                            <svg className="text-black" stroke="currentColor" fill="currentColor" strokeWidth={1} viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <svg className=" text-[#3B3C4A]" stroke="currentColor" fill="currentColor" strokeWidth={1} viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                                 <path fill="none" d="M0 0h24v24H0z"></path>
                                 <path d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z"></path>
                             </svg>
