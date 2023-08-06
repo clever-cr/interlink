@@ -20,7 +20,6 @@ function App() {
       <StaticsCard />
 
       <div className="internship">
-
        <InternshipPage />
 
        </div>
