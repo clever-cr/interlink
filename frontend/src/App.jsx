@@ -20,7 +20,7 @@ function App() {
       <StaticsCard />
 
       <div className="internship">
-        <h2> internship</h2>
+
        <InternshipPage />
 
        </div>
