@@ -5,7 +5,6 @@ import StaticsCard from "./components/ui/StatisticsCard";
 
 import InternshipPage from './pages/InternshipPage';
 
-
 function App() {
   return (
     <>
@@ -13,10 +12,6 @@ function App() {
 
       <StaticsCard />
 
-
-
-
-      
     </>
   );
 }
