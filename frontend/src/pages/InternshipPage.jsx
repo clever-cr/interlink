@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../components/layout/NavBar';
 import Footer from '../components/layout/Footer';
+import StartButton from '../components/ui/StartButton';
 import './InternshipPage.css';
 
 const opportunities = [
@@ -128,14 +129,18 @@ const InternshipPage = () => {
       <Navbar />
       {/* Include the Navbar component */}
       <div className="internship-page-content">
-        {/* Content specific to the InternshipPage */}
-        <h1>Sharing opportunities That’s our duty Interlink</h1>
-        <p>Embracing our duty, let's intertwine our efforts to illuminate paths and share opportunities, forging a brighter future together</p>
 
-        <h2 align-items="center"> TOP OPPORTUNITIES</h2>
+        <p className='center-align'>Are you a student ready to embark on an exciting journey
+        towards your dream career? Look no further,<br /> because InterLink is here to revolutionize
+        the way you find internships! Our cutting-edge web application is designed with one goal in mind:
+        to empower you to seize the internship opportunities that will shape your future.</p>
+
+        <h1 className='center-align bold-text'> TOP OPPORTUNITIES</h1>
         <div className="m-post-card-grid">
   {opportunities.map((opportunity, index) => (
     <div className="rectangle" key={index}>
+
+     <a href={`/opportunities/${opportunity.id}`}></a>
       {/* Opportunity image */}
       <img src={opportunity.photoPath} alt={opportunity.title} />
 
