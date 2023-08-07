@@ -22,11 +22,7 @@ function Hero() {
               from renowned companies and startups alike.
             </span>
           </div>
-          {/* <a href="#">
-            <button className="bg-[#141624] text-white text-xs rounded-md p-2">
-              <span>Get Started</span>
-            </button>
-          </a> */}
+
           <div className="flex flex-col justify-end bg-red-200">
             <StartButton text="Get Started" />
           </div>
@@ -46,9 +42,6 @@ function Hero() {
               <path d="M 0 60 Q 50 80 100 60 Q 50 75 0 60 Z" />
             </svg>
 
-            {/* <button className="font-extralight text-white text-center bg-[#141624F5] rounded-xl w-full h-11">
-              See our TrustPilot
-            </button> */}
             <StartButton text="See our TrustPilot" />
           </div>
           <div className="person- bg-blue-200]">
