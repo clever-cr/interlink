@@ -5,10 +5,16 @@ import StaticsCard from "./components/ui/StatisticsCard";
 import Login from "./components/forms/Login";
 import SignUp from "./components/forms/SignUp";
 
+import InternshipPage from './pages/InternshipPage';
+
 function App() {
   return (
     <>
       <Login />
+      <NavBar />
+
+      <StaticsCard />
+
     </>
   );
 }
