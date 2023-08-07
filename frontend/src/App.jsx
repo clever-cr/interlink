@@ -8,12 +8,6 @@ import InternshipPage from "./pages/InternshipPage";
 import Hero from "./components/sections/hero";
 import Testimonies from "./components/sections/Testimonies";
 function App() {
-  return (
-    <>
-      <NavBar />
-
-      <StaticsCard />
-    </>
-  );
+  return <></>;
 }
 export default App;
