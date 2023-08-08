@@ -4,13 +4,14 @@ import Home from "./pages/Home";
 import SignUp from "./components/forms/SignUp";
 import InternshipPage from "./pages/InternshipPage";
 import Login from "./components/forms/Login";
+import DescriptionPage from "./pages/DescriptionPage";
 function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
-            <Route index element={<Home />} />
+            <Route index element={<DescriptionPage />} />
             <Route path="signup" element={<SignUp />} />
             <Route path="internships" element={<InternshipPage />} />
             <Route path="login" element={<Login />} />
