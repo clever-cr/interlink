@@ -2,15 +2,18 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 import axios from "axios";
 import { useState } from "react";
 import Input from "../ui/Input";
-
+import { Link, useNavigate } from "react-router-dom";
 function Login() {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({ email: "", password: "" });
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post(`http://localhost:3003/auth/signin`, formData);
+    axios.post(`http://localhost:3003/auth/signin`, formData).then(() => {
+      navigate("/internships");
+    });
   };
 
   return (
@@ -41,15 +44,18 @@ function Login() {
                 </button>
               </div>
             </form>
+            <h1 className="text-gray-400">
+              Don't have an account{" "}
+              <Link className="text-[#141624] text-bold text-lg" to={"/signup"}>
+                create one
+              </Link>
+            </h1>
             <div className="pt-12 justify-center- flex">
               <button
-                className="bg-[#141624] px-14 py-3 rounded-l-[23px] text-white "
+                className="bg-[#141624] px-14 py-3 rounded-[23px] text-white "
                 onClick={handleSubmit}
               >
                 Log In
-              </button>
-              <button className=" px-14 py-3 rounded-r-[23px] bg-white">
-                Sign Up
               </button>
             </div>
           </div>

@@ -2,8 +2,10 @@ import { useState } from "react";
 import Input from "../ui/Input";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 function SignUp() {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -12,7 +14,9 @@ function SignUp() {
   });
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post(`http://localhost:3003/auth/signup`, formData);
+    axios.post(`http://localhost:3003/auth/signup`, formData).then(() => {
+      navigate("/login");
+    });
   };
 
   const handleChange = (e) => {
@@ -56,13 +60,10 @@ function SignUp() {
             </form>
             <div className="pt-5 justify-center- flex">
               <button
-                className="bg-[#141624] px-14 py-3 rounded-l-[23px] text-white"
+                className="bg-[#141624] px-14 py-3 rounded-[23px] text-white"
                 onClick={handleSubmit}
               >
                 Sign up
-              </button>
-              <button className=" px-14 py-3 rounded-r-[23px] bg-white">
-                Log In
               </button>
             </div>
           </div>
