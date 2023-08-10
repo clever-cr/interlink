@@ -4,7 +4,7 @@ import Footer from "../components/layout/Footer";
 import StartButton from "../components/ui/StartButton";
 import { Link } from "react-router-dom";
 import "./InternshipPage.css";
-import { opportunities } from "../data/Opportunites";
+import { opportunities } from "../data/opportunities";
 
 const InternshipPage = () => {
   console.log("data", opportunities);

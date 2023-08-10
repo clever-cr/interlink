@@ -1,6 +1,6 @@
 import StartButton from "../components/ui/StartButton";
 import { useParams } from "react-router";
-import { opportunities } from "../data/Opportunites";
+import { opportunities } from "../data/opportunities";
 import { Link } from "react-router-dom";
 
 function DescriptionPage() {
