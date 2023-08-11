@@ -30,4 +30,4 @@ To get started with InterLink, follow these steps:
 
 ## Contact Information
 
-For inquiries, please contact us at: [contact@interlink.com](mailto:contact@interlink.com)
+For inquiries, please contact us at: [c.uwicyeza@alustudent.com](mailto:c.uwicyeza@alustudent.com)
