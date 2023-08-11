@@ -11,7 +11,7 @@ const InternshipPage = () => {
 
   return (
     <div>
-      {/* Include the Navbar component */}
+      {/*  Include the Navbar component  */}
       <div className="internship-page-content px-16 py-20 ">
         <p className="center-align- text-4xl max-w-3xl font-thin">
           Are you a <span className=" font-bold">student</span> ready to embark
