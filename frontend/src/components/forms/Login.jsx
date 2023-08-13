@@ -11,9 +11,11 @@ function Login() {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post(`http://localhost:3003/auth/signin`, formData).then(() => {
-      navigate("/internships");
-    });
+    axios
+      .post(` https://lively-hoodie-lamb.cyclic.app/auth/signin`, formData)
+      .then(() => {
+        navigate("/internships");
+      });
   };
 
   return (
