@@ -15,7 +15,7 @@ function SignUp() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post(`https://lively-hoodie-lamb.cyclic.app/auth/signup`, formData)
+      .post(`https://fancy-erin-dalmatian.cyclic.app/auth/signup`, formData)
       .then(() => {
         navigate("/login");
       });

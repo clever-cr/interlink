@@ -12,7 +12,7 @@ function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post(` https://lively-hoodie-lamb.cyclic.app/auth/signin`, formData)
+      .post(`https://fancy-erin-dalmatian.cyclic.app/auth/signin`, formData)
       .then(() => {
         navigate("/internships");
       });
