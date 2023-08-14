@@ -58,7 +58,6 @@ const InternshipPage = () => {
           ))}
         </div>
       </div>
-      <Footer />
     </div>
   );
 };
