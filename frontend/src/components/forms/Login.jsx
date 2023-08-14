@@ -46,12 +46,6 @@ function Login() {
                 </button>
               </div>
             </form>
-            <h1 className="text-gray-400">
-              Don't have an account{" "}
-              <Link className="text-[#141624] text-bold text-lg" to={"/signup"}>
-                create one
-              </Link>
-            </h1>
             <div className="pt-12 justify-center- flex">
               <button
                 className="bg-[#141624] px-14 py-3 rounded-[23px] text-white "

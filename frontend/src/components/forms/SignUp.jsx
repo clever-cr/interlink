@@ -2,7 +2,7 @@ import { useState } from "react";
 import Input from "../ui/Input";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function SignUp() {
   const navigate = useNavigate();
@@ -60,6 +60,14 @@ function SignUp() {
                 type={"password"}
               />
             </form>
+            <div>
+              <h1 className="text-gray-400">
+                Already have an account{" "}
+                <Link className="text-[#141624] text-bold text-lg" to="/login">
+                  Login
+                </Link>
+              </h1>
+            </div>
             <div className="pt-5 justify-center- flex">
               <button
                 className="bg-[#141624] px-14 py-3 rounded-[23px] text-white"
