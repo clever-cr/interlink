@@ -10,7 +10,7 @@ function Footer() {
         <div className="flex text-sm gap-8">
           <p>Terms</p>
           <p className="pl-2 border-l border-gray-500">Privacy Policy</p>
-          <p className="pl-2 border-l border-gray-500">"Cookie policy</p>
+          <p className="pl-2 border-l border-gray-500">Cookie policy</p>
         </div>
       </div>
     </>
