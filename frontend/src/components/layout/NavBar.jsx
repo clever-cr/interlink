@@ -1,13 +1,30 @@
 import { FaSearch } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function NavBar() {
-  const links = ["Home", "About", "Opportunities"];
+  const links = [
+   {
+      name: "Home",
+      path:"/"
+   },
+   {
+    name:'opportunities',
+     path: "/internships"
+  }
+  ]
+
+  ;
   return (
     <div className="bg-[#F5F5F5] flex px-16 justify-between py-5 items-center ">
-      <h3 className="text-[#141624]  text-4xl">INTERLINK</h3>
+      <Link to="/" className="text-[#141624]  text-4xl">
+        INTERLINK
+      </Link>
+
       <div className="flex text-sm text-[#3B3C4A] gap-9">
-        {links.map((link) => (
-          <a key={link} href={`#${link.toLowerCase()}`}>{link}</a>
+        {links.map((link,index) => (
+<Link to={link.path} key={index}>{link.name}</Link>
+        
+        
         ))}
       </div>
       <div className="flex items-center bg-gray-200 py-2 px-3 gap-2 rounded-xl">

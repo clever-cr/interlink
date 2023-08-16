@@ -1,16 +1,24 @@
-import NavBar from "./components/layout/NavBar";
-import StartButton from "./components/ui/StartButton";
-import Footer from "./components/layout/Footer";
-import StaticsCard from "./components/ui/StatisticsCard";
-import Hero from "./components/sections/hero";
-import Testimonies from "./components/sections/Testimonies";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./components/layout/Layout";
+import Home from "./pages/Home";
+import SignUp from "./components/forms/SignUp";
+import InternshipPage from "./pages/InternshipPage";
+import Login from "./components/forms/Login";
+import DescriptionPage from "./pages/DescriptionPage";
 function App() {
   return (
     <>
-      <NavBar />
-      <Hero />
-
-      <Footer />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="signup" element={<SignUp />} />
+            <Route path="internships" element={<InternshipPage />} />
+            <Route path="internships/:id" element={<DescriptionPage />} />
+            <Route path="login" element={<Login />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
