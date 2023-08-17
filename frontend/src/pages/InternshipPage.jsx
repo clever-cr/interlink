@@ -3,12 +3,24 @@ import { opportunities } from "../data/opportunities";
 import { Link, Navigate } from "react-router-dom"; // Import Link from React Router
 import "./InternshipPage.css";
 import { ToastContainer, toast } from "react-toastify";
+import StartButton from "../components/ui/StartButton";
+import { useState } from "react";
 
 const InternshipPage = () => {
   const token = localStorage.getItem("token");
+  const userPosition = localStorage.getItem("title");
+  const userOpportunities = opportunities.filter(
+    (opportunity) => opportunity.title === userPosition
+  );
+  const [visibleOpportuinity, setVisibleOpportuinity] =
+    useState(userOpportunities);
+
   if (!token) {
     toast.warn("You have to login first");
     return <Navigate to="/login" />;
+  }
+  function showAllOpportunities() {
+    setVisibleOpportuinity(opportunities);
   }
   return (
     <div>
@@ -25,13 +37,16 @@ const InternshipPage = () => {
           goal in mind: to empower you to seize the internship opportunities
           that will shape your future.
         </p>
+        <div className="flex lg:flex-row flex-col items-center lg:justify-between pt-12  lg:pt-28 gap-3">
+          <h1 className=" bold-text text-3xl "> TOP OPPORTUNITIES</h1>
+          <StartButton
+            text="View all opportunities"
+            onclick={showAllOpportunities}
+          />
+        </div>
 
-        <h1 className="center-align bold-text lg:pt-28 text-3xl pt-12">
-          {" "}
-          TOP OPPORTUNITIES
-        </h1>
         <div className="grid lg:grid-cols-4 pt-14 gap-6 px-20- grid-cols-1">
-          {opportunities.map((opportunity, index) => (
+          {visibleOpportuinity.map((opportunity, index) => (
             <Link to={`/internships/${opportunity.id}`}>
               <div className="rectangle" key={index}>
                 {/* Opportunity image */}

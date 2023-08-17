@@ -4,15 +4,19 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import StartButton from "../ui/StartButton";
+import { opportunities } from "../../data/opportunities";
 
 function SignUp() {
+  const positions = opportunities.map((opportunity) => opportunity.title);
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
     email: "",
     password: "",
+    title: "",
   });
+  console.log("form data", formData);
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
@@ -67,6 +71,18 @@ function SignUp() {
                 onChange={handleChange}
                 type={"password"}
               />
+              <select
+                name="title"
+                className="outline-[#141624] lg:w-[446px] h-[69px] w-[340px] px-5 rounded-[23px] border"
+                onChange={handleChange}
+              >
+                <option disabled selected>
+                  select position
+                </option>
+                {positions.map((position) => (
+                  <option value={position}>{position}</option>
+                ))}
+              </select>
             </form>
             {/* <div>
               <h1 className="text-gray-400 w-[340px] ">
