@@ -11,14 +11,14 @@ function DescriptionPage() {
 
   return (
     <>
-      <div className="px-32 h-screen- py-20 flex flex-col gap-5">
+      <div className="lg:px-32 lg:py-20 flex flex-col gap-5 p-5">
         <div className="w-40">
           <h3 className="text-sm bg-[#4B6BFB] text-white rounded-lg shadow-sm py-3 px-2">
             {opportunity.title}
           </h3>
         </div>
-        <div className="padding py-3">
-          <h1 className="text-5xl font-bold font-mono- max-w-6xl leading-[60px]">
+        <div className="padding lg:py-3">
+          <h1 className="lg:text-5xl font-bold text-3xl max-w-6xl lg:leading-[60px]">
             {opportunity.text}
           </h1>{" "}
         </div>
@@ -36,7 +36,7 @@ function DescriptionPage() {
           </div>
         </div>
 
-        <div className="padding py-5">
+        <div className="padding lg:py-5">
           <p className="text-lg  font-serif">{opportunity.description}</p>
           <p>
             Before embarking on your journey, take the time to research your
