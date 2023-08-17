@@ -13,7 +13,8 @@ function Login() {
     e.preventDefault();
     axios
       .post(`https://fancy-erin-dalmatian.cyclic.app/auth/signin`, formData)
-      .then(() => {
+      .then((response) => {
+        localStorage.setItem("token", response.data.token);
         navigate("/internships");
       });
   };

@@ -1,9 +1,15 @@
 import "./InternshipPage.css";
 import { opportunities } from "../data/opportunities";
-import { Link } from "react-router-dom"; // Import Link from React Router
+import { Link, Navigate } from "react-router-dom"; // Import Link from React Router
 import "./InternshipPage.css";
+import { ToastContainer, toast } from "react-toastify";
 
 const InternshipPage = () => {
+  const token = localStorage.getItem("token");
+  if (!token) {
+    toast.warn("You have to login first");
+    return <Navigate to="/login" />;
+  }
   return (
     <div>
       {/*  Include the Navbar component  */}

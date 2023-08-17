@@ -5,6 +5,9 @@ import SignUp from "./components/forms/SignUp";
 import InternshipPage from "./pages/InternshipPage";
 import Login from "./components/forms/Login";
 import DescriptionPage from "./pages/DescriptionPage";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 function App() {
   return (
     <>
@@ -18,6 +21,7 @@ function App() {
             <Route path="login" element={<Login />} />
           </Route>
         </Routes>
+        <ToastContainer />
       </BrowserRouter>
     </>
   );
