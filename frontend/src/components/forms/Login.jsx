@@ -16,6 +16,7 @@ function Login() {
       .post(`https://fancy-erin-dalmatian.cyclic.app/auth/signin`, formData)
       .then((response) => {
         localStorage.setItem("token", response.data.token);
+        localStorage.setItem("title", response.data.user.title);
         navigate("/internships");
       });
   };

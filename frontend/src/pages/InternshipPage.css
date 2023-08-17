@@ -1,13 +1,11 @@
-.left-align{
+.left-align {
   text-align: left;
 }
-.center-align{
+.center-align {
   text-align: left;
   font-size: larger;
-
 }
-.bold-text{
-  padding-top: 50px;
+.bold-text {
   font-weight: bold;
   font-size: larger;
   text-align: center;
@@ -22,7 +20,6 @@
 }
 
 .rectangle {
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,8 +27,8 @@
   gap: 16px;
   width: 360px;
   height: 488px;
-  background: #FFFFFF;
-  border: 1px solid #E8E8EA;
+  background: #ffffff;
+  border: 1px solid #e8e8ea;
   border-radius: 22px;
   position: relative;
 }
@@ -54,25 +51,24 @@
 }
 
 .title {
-  font-family: 'Work Sans';
+  font-family: "Work Sans";
   font-weight: 600;
   font-size: 24px;
   line-height: 28px;
-  color: #181A2A;
+  color: #181a2a;
 }
 
 .category,
 .deadline {
-  font-family: 'Work Sans';
+  font-family: "Work Sans";
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
-  color: #97989F;
+  color: #97989f;
   position: absolute;
-
 }
 
-.category{
+.category {
   left: 10px;
   padding-top: 180px;
 }
