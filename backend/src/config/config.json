@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "freedb_Clever",
+    "password": "Py4CfCJ2!DpNNas",
+    "database": "freedb_Interlink",
+    "host": "sql.freedb.tech",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "freedb_Clever",
+    "password": "Py4CfCJ2!DpNNas",
+    "database": "freedb_Interlink",
+    "host": "sql.freedb.tech",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "freedb_Clever",
+    "password": "Py4CfCJ2!DpNNas",
+    "database": "freedb_Interlink",
+    "host": "sql.freedb.tech",
+    "dialect": "mysql"
+  }
+}
